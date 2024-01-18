@@ -15,6 +15,4 @@ jobs:
         env: 
           GIT_LOG: debug
       - run: |
-        echo 'Yey my first Workflow!'
-    
-  
+            echo "YeY My first WorkFlow!"
