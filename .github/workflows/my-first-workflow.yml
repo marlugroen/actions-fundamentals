@@ -1,0 +1,20 @@
+name: My first workflow
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  first_job: 
+    runs-on: ubuntu_latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        with: 
+          fetch-depth: 0
+        env: 
+          GIT_LOG: debug
+      - run: |
+        echo 'Yey my first Workflow!'
+    
+  
